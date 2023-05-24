@@ -9,7 +9,7 @@ let config ={
 
 formulario.addEventListener("submit", async (e)=>{
     e.preventDefault();
-    config.method = "PO";
+    config.method = "POST";
     let data = Object.fromEntries(new FormData(e.target));
     config.body = JSON.stringify(data);
     
