@@ -12,9 +12,7 @@ formulario.addEventListener("submit", async (e)=>{
     config.body = JSON.stringify(data);
 
     let res = await(await fetch("api.php",config)).text();
-    console.log(JSON);
     console.log(data);
-    console.log(config);
     console.log(res);
     document.querySelector("pre").innerHTML = res;
 
