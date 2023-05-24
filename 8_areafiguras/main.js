@@ -18,5 +18,6 @@ formularios.forEach((formulario)=>{
         document.querySelector("pre").innerHTML= res;
         console.log(res);
         console.log(data);
+        formulario.reset();
     });
 })
