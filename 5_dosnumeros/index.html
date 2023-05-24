@@ -9,14 +9,15 @@
 </head>
 <body>
     <form class="formulario">
-        <label for="">Ingrese un numero</label>
-        <input type="text" name="numero" id="">
-        <input type="submit" value="agregar numero">
+        <label for="">Ingrese un numero(_1)</label>
+        <input type="text" name="num1" pattern="[0-9-.]+"><br>
+        <label for="">Ingrese otro numero(_2)</label>
+        <input type="text" name="num2" pattern="[0-9-.]+"><br>
+        <input type="submit">
     </form>
-    <pre style="display: none;">
-        <h1>No hay datos ingresados</h1>
-        <button onclick="location.reload()">Ingresar nuevos datos</button>
-        <!-- aqui se agregaran los datos -->
+    <pre>
+        <!-- la respuesta se ingresara AQUI -->
     </pre>
+    
 </body>
 </html>
